@@ -11,7 +11,7 @@ li {
 }
 
 .nav-item:hover {
-    color: #fff !important;
+    color: #000000 !important;
     background-color: #182b49;
 }
 
@@ -37,7 +37,6 @@ li {
 
 section {
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -73,22 +72,6 @@ img {
     margin-bottom: 15px;
 }
 
-.grid-item::-webkit-scrollbar {
-    width: 10px;
-}
-
-.grid-item::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.grid-item::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-.grid-item::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 @media (max-width: 800px) {
     .grid-container {

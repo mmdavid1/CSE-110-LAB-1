@@ -1,9 +1,11 @@
 window.onload = function() {
-    document.getElementById("subscribe-form").addEventListener("submit", function(event) {
+    let form = document.getElementById("subscribe-form");
+
+    let emailInput = document.getElementById("email");
+
+    form.addEventListener("submit", function(event) {
+        console.log("Form submitted");
         event.preventDefault(); 
-        console.log("testing");
-        var emailInput = document.getElementById("email");
-        ;
-        alert("Thank you for subscribing with email: " + emailInput.value);
+        alert(emailInput.value);
     });
 }
