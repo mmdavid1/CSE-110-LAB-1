@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    display: inline;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #fff !important;
+    background-color: #182b49;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#section1 {
+    background: rgb(245, 240, 230);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#section2 {
+    color: white;
+    background-image: url('images/bg.jpg');
+
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section3 {
+    background-color: rgb(245, 240, 230);
+    padding: 40px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #182b49;
+    color: white;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin-bottom: 15px;
+}
+
+.grid-item::-webkit-scrollbar {
+    width: 10px;
+}
+
+.grid-item::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.grid-item::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.grid-item::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
